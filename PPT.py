@@ -11,64 +11,20 @@ pc = random.choice(opcoes) #O computador escolhe aleatoriamente uma opção
 # Mostra o que cada um escolheu
 print(f"Você escolheu: {jogador1}")
 if jogador1 == "pedra":
-        print('''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''      )
+    print(pedra)
 elif jogador1 == "papel":
-        print('''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''       )
-
+    print(papel)
 else:
-        print('''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''      )
+    print(tesoura)
 
 print(f"O computador escolheu: {pc}")
 
-if pc == "pedra":
-    print('''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-''')
+if pc== "pedra":
+    print(pedra)
 elif pc == "papel":
-    print('''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-''')
-
+    print(papel)
 else:
-    print('''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-''')
+    print(tesoura)
 
 if jogador1 == pc:
     print("Empate!")
@@ -81,4 +37,5 @@ elif (pc == "pedra" and jogador1 == "tesoura") or \
 #Verifica se você venceu
 else:
     print("Você ganhou, Parabéns!!!")
+
 
